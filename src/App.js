@@ -1,9 +1,11 @@
 import Moving from "./components/Layout/Moving";
+import Main from "./components/Main";
 
 function App() {
   return (
     <div>
-      <Moving />
+      {/* <Moving /> */}
+      <Main />
     </div>
   );
 }
