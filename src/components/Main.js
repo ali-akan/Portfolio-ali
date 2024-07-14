@@ -22,12 +22,33 @@ const Main = () => {
             solutions that resonate deeply with users.
           </Card>
           <Card>
-            Check out some of my notable projects: Github LinkedIn Instagram
-            Projects Certificates Contact Details: +90534 209 91 75
-            aali.akan@gmail.com
+            Check out some of my notable projects:
+            <a
+              className={classes.link}
+              href={"https://github.com/ali-akan"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              Github{" "}
+            </a>
           </Card>
           <Card>
             <Certificates />
+          </Card>
+          <Card>Contact Details:</Card>
+          <Card>+90534 209 91 75</Card>
+          <Card>aali.akan@gmail.com</Card>
+          <Card>
+            <a
+              className={classes.link}
+              href={"https://www.linkedin.com/in/muhammedaliakan/"}
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              LinkedIn{" "}
+            </a>{" "}
           </Card>
         </div>
       </div>

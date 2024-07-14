@@ -45,8 +45,8 @@ const Certificates = () => {
   ))
 
   return (<Fragment>
-      <h1 className={classes.header}>Certificates</h1>
 
+      {/* <h1 className={classes.header}>Certificates</h1> */}
     <div id="certificate" className={classes.certificate}>
       {certificate}
     </div>
