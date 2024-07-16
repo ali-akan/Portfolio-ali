@@ -36,9 +36,19 @@ const Main = () => {
           <Card>
             <Certificates />
           </Card>
-          <Card>Contact Details:</Card>
-          <Card>+90534 209 91 75</Card>
-          <Card>aali.akan@gmail.com</Card>
+          <Card>
+            <h4>
+              <Card>
+                Contact Details: <br />
+              </Card>&nbsp;
+              <Card>
+                {" "}
+                aali.akan@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Card />&nbsp;
+                <Card>+90 534 209 91 75</Card>
+                
+              </Card>
+            </h4>
+          </Card>
           <Card>
             <a
               className={classes.link}

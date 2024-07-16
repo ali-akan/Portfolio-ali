@@ -3,7 +3,6 @@
 }
 
 .certificate {
-  /* font-size: small; */
   text-decoration: none;
   display: flex;
   justify-content: center;
@@ -11,6 +10,5 @@
 }
 
 .list div {
-  /* border: 3px solid orange; */
   color: darkgray;
 }

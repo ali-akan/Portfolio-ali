@@ -36,9 +36,7 @@ const Certificates = () => {
     <div key={element.id} className={classes.list}>
       <a href={`${element.link}`} target="_blank" rel="noreferrer">
         <div>
-          {/* <h3>{element.flag}</h3> */}
           <h5>{element.name}</h5>
-          {/* <p>{element.description}</p> */}
         </div>
       </a>
     </div>
@@ -46,7 +44,6 @@ const Certificates = () => {
 
   return (<Fragment>
 
-      {/* <h1 className={classes.header}>Certificates</h1> */}
     <div id="certificate" className={classes.certificate}>
       {certificate}
     </div>
