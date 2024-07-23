@@ -2,7 +2,7 @@ import React, { useRef, useEffect } from "react";
 import classes from "./Moving.module.css";
 
 import anime from "animejs";
-import newYork from "../../assets/newYork.jpg";
+import newYork from "../../assets/NYC.jpg";
 
 function Moving() {
   const newYorkRef = useRef(null);
@@ -10,12 +10,11 @@ function Moving() {
   useEffect(() => {
     anime({
       targets: newYorkRef.current,
-      translateX: [-20, 10],
-      translateY: [20, 50],
-
+      translateX: [10, 20],
+      translateY: [10, 20],
       direction: "alternate",
       duration: 4000,
-
+      scale: [0.3, 0.3],
       loop: true,
       easing: "linear",
     });

@@ -1,6 +1,10 @@
 .card {
   border-radius: 12px;
-  z-index: 2;
+  z-index: 1;
   color: rgb(255, 255, 255);
-  text-align: center;
+  /* text-align: center; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
 }

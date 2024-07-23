@@ -3,13 +3,15 @@
 .main {
   position: relative;
   height: 100vh; /* Full viewport height */
+  width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: flex;
   align-items: center;
   overflow: hidden; /* Ensure no overflow from Moving component */
   font-family: "RobotoStatic";
   font-weight: 400;
   font-size: 1.5rem;
+  background-size: cover;
   /* border: 10px solid red; */
 }
 
@@ -18,35 +20,47 @@
   top: 0;
   left: 0;
   display: flex;
+  align-items: flex-start;
   width: 100%;
   height: 100%;
 }
 
 .leftColumn {
-  width: 30%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  /* 
   background-color: rgba(
     0,
     255,
     0,
     0.2
-  ); /* Semi-transparent lime for demonstration */
+  );  */
+  /* Semi-transparent lime for demonstration */
   padding: 3%;
-  gap: 1%;
+  /* border: 10px solid blue; */
+  /* gap: 1%; */
+  /* z-index: 1; */
 }
 
 .leftColumn > * {
   /* margin-bottom: 5%; */
-  font-size: small;
+  margin-top: 5%;
+  font-size: 50%;
+  /* border: 5px solid red; */
+  height: 100%;
+  
 }
 
 .movingBackground {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -55,44 +69,60 @@
 .link {
   color: rgb(186, 186, 186);
   text-decoration: none;
+  line-height: 2rem;
 }
 
 .certificates {
+  text-decoration: none;
+}
+
+.thomas {
+  z-index: 1;
+  color: rgb(87, 87, 87);
 }
 
 /* Mobile view media query */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   .main {
-    font-size: 1.2rem;
+    font-size: medium;
   }
   .leftColumn h3 {
-    text-align: center ;
+    text-align: center;
   }
 
-  .cardsContainer {
+  /* .cardsContainer {
     display: flex;
     align-items: center;
+    justify-content: center;
 
-    width: 60%;
+    width: 100%;
     height: 100%;
-  }
+z-index: 1;
+  } */
 
   .leftColumn {
-    width: 80%;
+    width: 70%;
+    height: 60%;
     padding: 5%;
-    gap: 2%;
     display: flex;
-    align-items: center; 
-    text-align: center; 
+    /* align-items: center; */
+    /* text-align: center; */
   }
 
   .leftColumn > * {
-    font-size: small;
+    font-size: 25%;
+   
   }
 
   .leftColumn h2,
   .leftColumn h3,
   .leftColumn p {
-    text-align: center;  
+    /* text-align: center; */
+  }
+
+  .leftColumn h1 {
+    z-index: 1;
+    white-space:nowrap;
+    word-break: keep-all;
   }
 }
