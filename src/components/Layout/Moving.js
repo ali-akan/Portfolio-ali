@@ -10,13 +10,21 @@ function Moving() {
   useEffect(() => {
     anime({
       targets: newYorkRef.current,
-      translateX: [10, 20],
+      translateX: [10, 40],
       translateY: [10, 20],
       direction: "alternate",
-      duration: 4000,
+      duration: 3000,
       scale: [0.3, 0.3],
       loop: true,
       easing: "linear",
+    });
+
+    // Add opacity animation
+    anime({
+      targets: newYorkRef.current,
+      opacity: [0, 1],
+      duration: 2000,
+      easing: "easeInOutQuad",
     });
   }, []);
 

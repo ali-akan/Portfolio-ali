@@ -19,8 +19,8 @@ const Main = () => {
           <Card>
             <h2>What's my focus?</h2>I am passionate about creating intuitive
             user interfaces and elevating web applications with innovative
-            solutions that resonate deeply with users.
-            Check out some of my notable projects:
+            solutions that resonate deeply with users. Check out some of my
+            notable projects:
             <a
               className={classes.link}
               href={"https://github.com/ali-akan"}
@@ -43,17 +43,18 @@ const Main = () => {
               Github{" "}
             </a>
           </Card> */}
-            <Certificates />
+          <Certificates />
           <Card>
             <h4>
               <Card>
                 Contact Details: <br />
-              </Card>&nbsp;
+              </Card>
+              &nbsp;
               <Card>
                 {" "}
-                aali.akan@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Card />&nbsp;
+                aali.akan@gmail.com &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <Card />
+                &nbsp;
                 <Card>+90 534 209 91 75</Card>
-                
               </Card>
             </h4>
           </Card>
@@ -68,12 +69,9 @@ const Main = () => {
               LinkedIn{" "}
             </a>{" "}
           </Card>
-          <footer className={classes.thomas}>
-         Photo: Thomas Habr
-          </footer>
+          <footer className={classes.thomas}>Photo: Thomas Habr</footer>
         </div>
       </div>
-      
     </div>
   );
 };
